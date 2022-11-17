@@ -36,6 +36,16 @@ $ git push origin gh-pages
 しかし、`checkout`は一度コミットしないと切り替えられないらしく（切り替えられるがコミット前のデータが消失？）少し都合が悪い？  
 もしrailsプロジェクトとjekyllプロジェクトの両方の書き換えが激しい場合、単純にリポジトリを分けたほうがいいかもしれない。
 
+```bash
+$ git add .
+$ git commit -m "readme.mdの編集"
+$ git checkout gh-pages
+$ cd docs
+# _config.ymlの編集
+$ git add .
+$ git commit -m "_config.ymlの編集"
+$ git push origin gh-pages
+```
 
 ## 参考
 > - [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
