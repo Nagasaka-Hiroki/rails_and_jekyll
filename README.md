@@ -46,6 +46,12 @@ $ git add .
 $ git commit -m "_config.ymlの編集"
 $ git push origin gh-pages
 ```
+どうやら、普通にpushした場合ディレクトリは`root`になるらしいので、設定で`./docs`に変更しなければダメそうだ。
+
+結果問題なくデプロイはできた。
+> - [https://nagasaka-hiroki.github.io/rails_and_jekyll/](https://nagasaka-hiroki.github.io/rails_and_jekyll/)
+
+ひとまずメモは以上。
 
 ## 参考
 > - [Creating a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
